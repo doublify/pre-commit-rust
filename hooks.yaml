@@ -1,0 +1,7 @@
+-   id: fmt
+    name: fmt
+    description: Format files with rustfmt.
+    entry: rustfmt
+    language: system
+    files: \.(rs|rlib)$
+    args: ['--write-mode=overwrite']
