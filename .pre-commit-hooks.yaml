@@ -3,5 +3,5 @@
     description: Format files with rustfmt.
     entry: rustfmt
     language: system
-    files: \.(rs|rlib)$
+    files: \.rs$
     args: ['--write-mode=overwrite']
