@@ -1,7 +1,7 @@
 -   id: fmt
     name: fmt
     description: Format files with rustfmt.
-    entry: rustfmt
+    entry: cargo fmt
     language: system
     files: \.rs$
     args: ['--write-mode=overwrite']
