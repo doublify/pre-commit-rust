@@ -1,6 +1,6 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    sha: v1.1.1
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
     hooks:
     -   id: check-byte-order-marker
     -   id: check-case-conflict
@@ -11,6 +11,6 @@ repos:
     -   id: mixed-line-ending
     -   id: trailing-whitespace
 -   repo: https://github.com/pre-commit/pre-commit
-    sha: v1.4.1
+    rev: v1.8.2
     hooks:
     -   id: validate_manifest
