@@ -9,4 +9,5 @@
     rev: master
     hooks:
     -   id: fmt
+    -   id: cargo-check
 ```
