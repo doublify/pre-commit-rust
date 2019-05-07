@@ -5,3 +5,10 @@
     language: system
     files: \.rs$
     args: []
+-   id: cargo-check
+    name: cargo check
+    description: Check the package for errors.
+    entry: cargo check
+    language: system
+    files: \.rs$
+    pass_filenames: false
