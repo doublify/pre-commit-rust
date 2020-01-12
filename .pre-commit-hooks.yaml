@@ -3,19 +3,19 @@
     description: Format files with cargo fmt.
     entry: cargo fmt --
     language: system
-    files: \.rs$
+    types: [rust]
     args: []
 -   id: cargo-check
     name: cargo check
     description: Check the package for errors.
     entry: cargo check
     language: system
-    files: \.rs$
+    types: [rust]
     pass_filenames: false
 -   id: clippy
     name: clippy
     description: Lint rust sources
     entry: cargo clippy -- -D warnings
     language: system
-    files: \.rs$
+    types: [rust]
     pass_filenames: false
