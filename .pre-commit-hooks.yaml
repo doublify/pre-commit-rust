@@ -1,7 +1,7 @@
 -   id: fmt
     name: fmt
     description: Format files with cargo fmt.
-    entry: cargo fmt
+    entry: cargo fmt --
     language: system
     types: [rust]
     args: []
