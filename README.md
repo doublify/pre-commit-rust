@@ -11,3 +11,13 @@
     -   id: fmt
     -   id: cargo-check
 ```
+
+## Passing arguments to rustfmt
+
+```yaml
+-   repo: https://github.com/doublify/pre-commit-rust
+    rev: master
+    hooks:
+    -   id: fmt
+        args: ['--verbose', '--edition', '2018', '--']
+```
