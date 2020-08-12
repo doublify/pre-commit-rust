@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - id: compute_tag
+        uses: craig-day/compute-tag@v10
+        with:
+          github_token: ${{ github.token }}
+          version_scheme: continuous
+          version_type: major
+
+      - name: create release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.compute_tag.outputs.next_tag }}
+          release_name: ${{ steps.compute_tag.outputs.next_tag }}
+          body: >
+            Automatic release of ${{ steps.compute_tag.outputs.next_tag }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
