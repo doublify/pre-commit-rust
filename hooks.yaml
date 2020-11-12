@@ -12,6 +12,13 @@
     language: system
     files: \.rs$
     pass_filenames: false
+-   id: cargo-docs
+    name: cargo docs
+    description: Build docs for the package.
+    entry: cargo doc
+    language: system
+    files: \.rs$
+    pass_filenames: false
 -   id: cargo-clippy
     name: cargo clippy
     description: Run the Clippy linter on the package.

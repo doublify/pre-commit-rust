@@ -12,6 +12,13 @@
   language: system
   types: [rust]
   pass_filenames: false
+- id: cargo-doc
+  name: cargo doc
+  description: Build package docs.
+  entry: cargo doc
+  language: system
+  types: [rust]
+  pass_filenames: false
 - id: clippy
   name: clippy
   description: Lint rust sources
