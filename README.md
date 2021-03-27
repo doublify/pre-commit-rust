@@ -19,5 +19,7 @@
     rev: master
     hooks:
     -   id: fmt
-        args: ['--verbose', '--edition', '2018', '--']
+        args: ['--verbose', '--', '--edition', '2018' ]
 ```
+
+Note: Cargo fmt picks up "edition" automatically from Cargo.toml, so specificying this isn't necessary in most cases.
