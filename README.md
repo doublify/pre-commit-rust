@@ -9,7 +9,9 @@
     rev: master
     hooks:
     -   id: fmt
+    -   id: clippy
     -   id: cargo-check
+    -   id: cargo-test
 ```
 
 ## Passing arguments to rustfmt
