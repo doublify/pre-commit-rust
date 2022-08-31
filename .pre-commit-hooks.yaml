@@ -12,6 +12,13 @@
   language: system
   types: [rust]
   pass_filenames: false
+- id: cargo-test
+  name: cargo test
+  description: Run tests
+  entry: cargo test
+  language: system
+  types: [rust]
+  pass_filenames: false
 - id: clippy
   name: clippy
   description: Lint rust sources
