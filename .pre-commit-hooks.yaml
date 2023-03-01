@@ -20,3 +20,11 @@
   args: ["--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: update
+  name: update
+  description: updates cargo packages and lock file
+  entry: cargo update
+  language: system
+  types: [rust]
+  pass_filenames: false
+
