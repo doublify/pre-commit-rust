@@ -1,0 +1,9 @@
+[package]
+name = "pre-commit-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Dummy cargo repo to ask pre-commit install cargo."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
