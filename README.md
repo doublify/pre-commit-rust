@@ -6,7 +6,7 @@
 
 ```yaml
 -   repo: https://github.com/doublify/pre-commit-rust
-    rev: master
+    rev: v1.0
     hooks:
     -   id: fmt
     -   id: cargo-check
@@ -16,7 +16,7 @@
 
 ```yaml
 -   repo: https://github.com/doublify/pre-commit-rust
-    rev: master
+    rev: v1.0
     hooks:
     -   id: fmt
         args: ['--verbose', '--edition', '2018', '--']
