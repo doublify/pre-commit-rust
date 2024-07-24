@@ -5,6 +5,7 @@
   language: system
   types: [rust]
   args: ["--"]
+  pass_filenames: false
 - id: cargo-check
   name: cargo check
   description: Check the package for errors.
