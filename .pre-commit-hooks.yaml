@@ -20,3 +20,18 @@
   args: ["--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: test
+  name: test
+  description: Run tests with cargo test
+  entry: cargo test
+  language: system
+  types: [rust]
+  args: ["--all-targets"]
+  pass_filenames: false
+- id: build
+  name: build
+  description: Build using cargo build
+  language: system
+  types: ["rust"]
+  entry: cargo build
+  pass_filenames: false
